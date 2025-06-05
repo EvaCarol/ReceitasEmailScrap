@@ -1,10 +1,10 @@
-Scraper de Receitas Tasty
+**Scraper de Receitas Tasty
 
 
 Este projeto realiza scraping de receitas de bolos e sobremesas do site Tasty, coletando título, imagem e link de até três receitas, e as envia por e-mail. Utiliza Node.js, Puppeteer para scraping e Nodemailer para envio de e-mails.
 
 
-Descrição
+**Descrição
 
 
 O script acessa a página de receitas de bolos do Tasty, extrai informações de até três receitas (título, imagem e link) e envia um e-mail formatado com essas informações. O projeto é ideal para automação de envio de receitas diárias ou para aprendizado sobre web scraping e envio de e-mails com Node.js.
@@ -15,13 +15,13 @@ Envio de e-mail: Envia um e-mail HTML com até três receitas, incluindo título
 Depuração: Gera debug.html (HTML da página) e debug-screenshot.png (captura de tela) para análise em caso de erros.
 Configuração flexível: Suporta serviços de e-mail como Mailtrap (para testes) ou Gmail.
 
-Pré-requisitos
+**Pré-requisitos
 
 Node.js: Versão 16 ou superior (testado com v22.14.0).
 Conta de e-mail: Para testes, use Mailtrap. Para produção, use Gmail com senha de aplicativo.
 Git (opcional): Para clonar o repositório.
 
-Instalação
+**Instalação
 
 Clone o repositório:
 git clone https://github.com/seu-usuario/scraper-receitas-tasty.git
@@ -46,6 +46,7 @@ EMAIL_PASS=<sua-senha-mailtrap>
 
 
 Para Gmail:
+
 Habilite autenticação de dois fatores e gere uma senha de aplicativo em https://myaccount.google.com/security.
 Adicione ao .env:EMAIL_HOST=smtp.gmail.com
 EMAIL_PORT=587
@@ -79,7 +80,8 @@ debug.html: HTML da página para análise de erros.
 
 
 
-Depuração
+** Depuração
+
 Se ocorrerem erros (ex.: "Nenhuma receita encontrada"), siga estes passos:
 
 Verifique debug-screenshot.png:
@@ -108,7 +110,8 @@ CAPTCHA: Se aparecer, considere um serviço como 2Captcha ou um proxy.
 
 
 
-Estrutura do Projeto
+** Estrutura do Projeto
+
 scraper-receitas-tasty/
 ├── recipe-scraper.js    # Script principal
 ├── .env                 # Configurações de e-mail (não versionado)
@@ -117,7 +120,7 @@ scraper-receitas-tasty/
 ├── package.json         # Dependências do projeto
 └── README.md            # Este arquivo
 
-Contribuição
+** Contribuição
 
 Faça um fork do repositório.
 Crie uma branch para sua feature:git checkout -b minha-feature
@@ -131,14 +134,15 @@ Envie para o repositório remoto:git push origin minha-feature
 
 Abra um Pull Request.
 
-Licença
+**Licença
+
 Este projeto está licenciado sob a MIT License.
 Autor
 
 Evellyn Silva
 Contato: evellyncarolyne12@gmail.com
 
-Agradecimentos
+**Agradecimentos
 
 Tasty pelo conteúdo de receitas.
 Puppeteer e puppeteer-extra por facilitar o scraping.
