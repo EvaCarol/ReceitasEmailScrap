@@ -1,6 +1,12 @@
 Scraper de Receitas Tasty
+
+
 Este projeto realiza scraping de receitas de bolos e sobremesas do site Tasty, coletando título, imagem e link de até três receitas, e as envia por e-mail. Utiliza Node.js, Puppeteer para scraping e Nodemailer para envio de e-mails.
+
+
 Descrição
+
+
 O script acessa a página de receitas de bolos do Tasty, extrai informações de até três receitas (título, imagem e link) e envia um e-mail formatado com essas informações. O projeto é ideal para automação de envio de receitas diárias ou para aprendizado sobre web scraping e envio de e-mails com Node.js.
 Funcionalidades
 
